@@ -1,0 +1,63 @@
+/* Container styling */
+.container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px dashed hotpink;
+    background-color: #fff0f5;
+    box-shadow: 0 0 10px rgba(255, 192, 203, 0.4);
+    text-align: center;
+  }
+  
+  /* Tic-Tac-Toe board styling */
+  .board {
+    width: 200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Individual cell styling */
+  .cell {
+    width: 60px;
+    height: 60px;
+    font-size: 2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    user-select: none;
+  }
+  
+  .cell.x {
+    color: blue;
+  }
+  .cell.o {
+    color: red;
+  }
+  
+  /* Status text styling */
+  #status {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  /* Restart button styling */
+  button#restartBtn {
+    padding: 0.5em 1em;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color: #d6d6ff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+  
+  button#restartBtn:hover {
+    background-color: #9a84d8;
+  }
+  
